@@ -1,0 +1,25 @@
+--Create a grocery store database
+
+CREATE TABLE Cars (ID INTEGER PRIMARY KEY, MAKE TEXT, MODEL TEXT, YEAR INTEGER, COLOR TEXT, PRICE INTEGER);
+
+INSERT INTO Cars VALUES (1, "Ford", "Mustang", 1969, "Red", 24500);
+INSERT INTO Cars VALUES (2, "Ford", "F150 XLT", 2017, "Black", 32998);
+INSERT INTO Cars VALUES (3, "Ford", "Escape SE", 2018, "White", 21998);
+INSERT INTO Cars VALUES (4, "Mercedes-Benz", "E300", 2017, "Silver", 36998);
+INSERT INTO Cars VALUES (5, "Jeep", "Wrangler Unlimited Sport", 2016, "Steel Gray", 29998);
+INSERT INTO Cars VALUES (6, "Toyota", "4Runner SR5", 2019, "Black", 34998);
+INSERT INTO Cars VALUES (7, "Audi", "Q7 Preminum Plus", 2019, "Blue", 54998);
+INSERT INTO Cars VALUES (8, "Jaguar", "XF R-Sport", 2016, "Silver", 29998);
+INSERT INTO Cars VALUES (9, "Volkswagon", "Passat R-Line", 2018, "White", 22998);
+INSERT INTO Cars VALUES (10, "Land Rover", "Range Rover Velar S", 2020, "Smoke Gray", 59998);
+INSERT INTO Cars VALUES (11, "Ram", "3500 Laramie Longhorn", 2018, "White", 60998);
+INSERT INTO Cars VALUES (12, "Volvo", "XC60 3.2 Platinum", 2013, "Red", 20998);
+INSERT INTO Cars VALUES (13, "BMW", "X5 Plug in Hybrid XDrive402", 2016, "Cherry Red", 40998);
+INSERT INTO Cars VALUES (14, "Lexus", "NX 200t", 2016, "Blue", 30998);
+INSERT INTO Cars VALUES (15, "Infiniti", "QX60", 2015, "Black", 25998);
+
+--display the database ordered by price
+SELECT * FROM cars ORDER BY PRICE;
+
+--display the total sum of all cars
+SELECT SUM(PRICE) FROM Cars;
